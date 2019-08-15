@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".MainActivity">
+
+    <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/me"
+            android:textSize="25sp"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/me" android:layout_marginTop="4dp"/>
+    <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/robot"
+            android:textSize="25sp"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/robot" app:layout_constraintHorizontal_bias="0.498"/>
+    <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_one"
+            android:textSize="25sp"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/robot"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" app:layout_constraintHorizontal_bias="0.498"/>
+    <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score_0"
+            android:textSize="25sp"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintBottom_toTopOf="@+id/rock" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            android:layout_marginBottom="24dp"/>
+
+    <ImageButton
+            android:id="@+id/rock"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/rock"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="36dp" app:layout_constraintHorizontal_bias="0.509"
+            android:contentDescription="TODO"/>
+
+    <ImageButton
+            android:id="@+id/paper"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/paper"
+            app:layout_constraintEnd_toStartOf="@+id/rock"
+            android:layout_marginEnd="28dp" android:layout_marginRight="28dp"
+            android:layout_marginBottom="36dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="TODO"/>
+
+    <ImageButton
+            android:id="@+id/scissor"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/scissor"
+            app:layout_constraintStart_toEndOf="@+id/rock"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
+            android:layout_marginBottom="36dp" app:layout_constraintBottom_toBottomOf="parent"/>
+    <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp" app:srcCompat="@android:drawable/sym_def_app_icon"
+            android:id="@+id/robot" android:layout_marginBottom="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/me"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.501"/>
+    <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp" app:srcCompat="@drawable/me"
+            android:id="@+id/me"
+            android:layout_marginBottom="44dp"
+            app:layout_constraintBottom_toTopOf="@+id/score" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.501"/>
+
+
+</android.support.constraint.ConstraintLayout>

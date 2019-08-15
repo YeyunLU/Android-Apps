@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RSP</string>
+    <string name="me">me</string>
+    <string name="robot">robot</string>
+    <string name="pick_one">PICK ONE</string>
+    <string name="score_0">SCORE: 0</string>
+</resources>
