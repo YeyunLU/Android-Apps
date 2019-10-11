@@ -1,6 +1,6 @@
 # Android-Apps
-## Koltin
-## Android Apps based on Android Studio and Kotlin.
+Koltin
+Android Apps based on Android Studio and Kotlin.
 
 ## RSP
 The user and computer each pick an option: Rock, Paper, or Scissors. The computer's choice is made randomly. 
